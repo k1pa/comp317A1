@@ -18,12 +18,14 @@ public class encoder{
     //do not need a dictionary as we can just output straight from the while loop, using System.out.write.
     try{
       while((inByte = (byte) System.in.read()) != -1){
-        if(tr.isMax(max)){tr = new trie();}
+        if(tr.isMax(max)){
+			tr = new trie();
+			System.out.println("1 1");}
         tr.insertNode(inByte);
 		prev = inByte;
       }
 	  //need this line incase we were trying to find next byte to match but instead found end of file
-	  if(tr.previous != null) System.out.println(tr.previous.getPhase() + " " + tr.currentNode.getByte());
+	  if(tr.previous != null && tr.currentNode != null) System.out.println(tr.previous.getPhase() + " " + tr.currentNode.getByte());
     }
     catch(IOException e){
       System.err.println("error reading");

@@ -17,10 +17,10 @@ public class decoder{
 
         num = Integer.parseInt(parts[0]);
         if(num == 1){
-          s = new dictionary();
-          return;}
-        inChar = Byte.valueOf(parts[1]);
-        s.insert(num,inChar);
+          s = new dictionary();}
+        else{ 
+			inChar = Byte.valueOf(parts[1]);
+			s.insert(num,inChar);}
       }
     }
     catch (IOException e){
