@@ -14,7 +14,6 @@ public class decoder{
 	node current = null;
 	
     try{
-		long start = System.currentTimeMillis();
       while((line = rdr.readLine()) != null){
         parts = line.split(" ");
 
@@ -44,8 +43,6 @@ public class decoder{
 			}
 		}
       }
-	  long time = System.currentTimeMillis() - start;
-				System.err.println(time);
     }
     catch (IOException e){
       System.err.println("error reading");
