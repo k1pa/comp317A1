@@ -10,6 +10,4 @@ public class node{
   int getPhase(){return phase;}
 
   byte getByte(){return ch;}
-
-  char getChar(){return (char) ch;}
 }

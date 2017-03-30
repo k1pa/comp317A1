@@ -20,11 +20,11 @@ public class dictionary{
 
   void stacking()
   {
-    stack.push(hold.getChar());
+    //stack.push(hold.getChar());
     while(true)
     {
       hold = dict.get(hold.getPhase() - 2);
-      stack.push((Character) hold.getChar());
+      //stack.push((Character) hold.getChar());
       if(hold.getPhase() == 0)
         break;
     }
@@ -34,8 +34,8 @@ public class dictionary{
     }
   }
   void print(){
-    if(hold.getPhase() == 0)
-      System.out.print(hold.getChar());
-    else stacking();
+    //if(hold.getPhase() == 0)
+     // System.out.print(hold.getChar());
+    //else stacking();
   }
 }

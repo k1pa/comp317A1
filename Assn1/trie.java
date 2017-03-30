@@ -3,7 +3,6 @@ import java.util.*;
 class trie{
   trieNode newNode;
   int countTrie = 1;
-  int phase;
   trieNode currentNode = null;
   LinkedList<trieNode> root = new LinkedList<trieNode>();
   Iterator<trieNode> li;
@@ -40,7 +39,7 @@ class trie{
       countTrie++;
       newNode = new trieNode(countTrie, b);
       root.add(newNode);
-      System.out.println("0" + " " +  b);
+      System.out.println("1" + " " +  b);
       return;
     }
 
